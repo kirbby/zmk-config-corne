@@ -17,9 +17,7 @@
 //    chain-length = <27>;
 //};
 
-&nice_view_spi { 
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
+&nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
 / {
     keymap {
@@ -37,7 +35,7 @@
         Lower_layer {
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp UP        &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
-&bt BT_CLR      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &trans        &trans        &trans
+&bt BT_CLR      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans          &bt BT_NXT    &bt BT_PRV    &bt BT_SEL 0   &trans        &trans        &trans
 &kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans         &trans        &trans        &trans
                                             &kp LEFT_GUI  &trans        &kp RETURN      &kp SPACE     &trans        &kp RIGHT_ALT
             >;
