@@ -35,7 +35,7 @@
         Lower_layer {
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp UP        &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
-&bt BT_CLR      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans          &bt BT_NXT    &bt BT_PRV    &bt BT_SEL 0   &trans        &trans        &trans
+&bt BT_CLR      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans          &bt BT_NXT    &bt BT_PRV    &bt BT_SEL 0   &bt BT_NXT    &trans        &trans
 &kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans         &trans        &trans        &trans
                                             &kp LEFT_GUI  &trans        &kp RETURN      &kp SPACE     &trans        &kp RIGHT_ALT
             >;
