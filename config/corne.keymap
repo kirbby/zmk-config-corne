@@ -70,7 +70,7 @@
 &kp TAB         &kp Q  &kp W  &kp E      &kp R      &kp T          &kp Y            &kp U      &kp I         &kp O       &kp P          &kp DEL
 &kp LEFT_ALT    &kp A  &kp S  &kp D      &kp F      &kp G          &kp H            &kp J      &kp K         &kp L       &kp SEMICOLON  &kp RIGHT_ALT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V      &kp B          &kp N            &kp M      &kp COMMA     &kp PERIOD  &kp SLASH      &kp RIGHT_WIN
-                              &kp LCTRL  &kp SPACE  &lt 2 ENTER    &lt 3 BACKSPACE  &kp RSHFT  &kp LEFT_ALT
+                              &kp LCTRL  &kp SPACE  &lt 4 ENTER    &lt 2 BACKSPACE  &kp RSHFT  &kp LEFT_ALT
             >;
         };
 
@@ -79,16 +79,7 @@
 &kp TAB         &kp Q  &kp W           &kp E           &kp R        &kp T          &kp Y            &kp U        &kp I           &kp O            &kp P          &kp DEL
 &kp LEFT_ALT    &kp A  &mt LEFT_GUI A  &mt LEFT_ALT D  &mt LCTRL F  &kp G          &kp H            &mt RCTRL J  &mt LEFT_ALT K  &mt RIGHT_GUI L  &kp SEMICOLON  &kp RIGHT_ALT
 &kp LEFT_SHIFT  &kp Z  &kp X           &kp C           &kp V        &kp B          &kp N            &kp M        &kp COMMA       &kp PERIOD       &kp SLASH      &kp RIGHT_WIN
-                                       &kp LCTRL       &kp SPACE    &lt 2 ENTER    &lt 3 BACKSPACE  &kp RSHFT    &kp LEFT_ALT
-            >;
-        };
-
-        Numbers {
-            bindings = <
-&none  &none  &none     &kp UP    &none         &none    &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &none
-&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT     &none    &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none  &none
-&none  &none  &none     &copy     &paste        &none    &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
-                        &none     &kp LEFT_WIN  &none    &none   &kp LCTRL     &none
+                                       &kp LCTRL       &kp SPACE    &lt 4 ENTER    &lt 2 BACKSPACE  &kp RSHFT    &kp LEFT_ALT
             >;
         };
 
@@ -97,7 +88,16 @@
 &none  &kp EXCLAMATION  &kp LESS_THAN         &kp GREATER_THAN       &kp EXCLAMATION  &kp PERCENT    &kp CARET       &kp AMPERSAND      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &none
 &none  &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp PIPE       &kp SQT         &kp PLUS           &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp MINUS              &kp GRAVE
 &none  &none            &kp BACKSLASH         &kp SLASH              &kp ASTERISK     &kp DOLLAR     &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE               &kp TILDE
-                                              &none                  &none            &none          &none           &none              &none
+                                              &none                  &trans           &trans         &trans          &trans             &none
+            >;
+        };
+
+        Numbers {
+            bindings = <
+&none  &none  &none     &kp UP    &none         &none     &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &none
+&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT     &none     &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none  &none
+&none  &none  &none     &copy     &paste        &none     &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
+                        &none     &kp LEFT_WIN  &trans    &trans  &kp LCTRL     &none
             >;
         };
 
@@ -115,8 +115,8 @@
         compatible = "zmk,conditional-layers";
 
         Func_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <4 2>;
+            then-layer = <5>;
         };
     };
 };
