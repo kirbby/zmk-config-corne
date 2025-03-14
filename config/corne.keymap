@@ -150,7 +150,7 @@
 &kp TAB         &kp Q  &kp W           &kp E           &kp R        &kp T          &kp Y            &kp U        &kp I           &kp O            &kp P          &kp DEL
 &kp LEFT_ALT    &kp A  &mt LEFT_GUI A  &mt LEFT_ALT D  &mt LCTRL F  &kp G          &kp H            &mt RCTRL J  &mt LEFT_ALT K  &mt RIGHT_GUI L  &kp SEMICOLON  &kp RIGHT_ALT
 &kp LEFT_SHIFT  &kp Z  &kp X           &kp C           &kp V        &kp B          &kp N            &kp M        &kp COMMA       &kp PERIOD       &kp SLASH      &kp RIGHT_WIN
-                                       &kp LCTRL       &kp SPACE    &lt 4 ENTER    &lt 2 BACKSPACE  &kp RSHFT    &kp LEFT_ALT
+                                       &kp LCTRL       &kp SPACE    &lt 3 ENTER    &lt 2 BACKSPACE  &kp RSHFT    &kp LEFT_ALT
             >;
         };
 
@@ -174,9 +174,9 @@
 
         Settings {
             bindings = <
-&none             &none  &bl BL_DEC       &bl BL_INC       &bl BL_TOG       &none    &none  &none       &none       &none   &none  &none
-&none             &none  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none    &none  &bt BT_NXT  &bt BT_PRV  &tog 1  &none  &none
-&ext_power EP_ON  &none  &none            &none            &none            &none    &none  &none       &none       &none   &none  &bt BT_CLR
+&none             &none  &bl BL_DEC       &bl BL_INC       &bl BL_TOG       &none    &none  &none       &none       &none  &none  &none
+&none             &none  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none    &none  &bt BT_NXT  &bt BT_PRV  &to 0  &to 1  &none
+&ext_power EP_ON  &none  &none            &none            &none            &none    &none  &none       &none       &none  &none  &bt BT_CLR
                                           &none            &none            &none    &none  &none       &none
             >;
         };
