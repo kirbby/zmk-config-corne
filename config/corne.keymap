@@ -72,6 +72,62 @@
             bindings = <&sk RIGHT_ALT &kp E>;
             label = "EURO";
         };
+
+        shift_win: shift_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT &kp LEFT_WIN>;
+            label = "SHIFT_WIN";
+        };
+
+        ctrl_q: ctrl_q {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp Q>;
+            label = "CTRL_Q";
+        };
+
+        ctrl_a: ctrl_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp A>;
+            label = "CTRL_A";
+        };
+
+        ctrl_s: ctrl_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp S>;
+            label = "CTRL_S";
+        };
+
+        kill_node: kill_node {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT &kp LCTRL &kp LEFT_ALT &kp C>;
+            label = "KILL_NODE";
+        };
+
+        find_file_in_explorer: find_file_in_explorer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp F1>;
+            label = "FIND_FILE_IN_EXPLORER";
+        };
+
+        ctrl_r: ctrl_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp R>;
+            label = "CTRL_R";
+        };
+
+        ctrl_shift_r: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LSHIFT &kp R>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -115,10 +171,10 @@
 
         Numbers {
             bindings = <
-&none  &kp F2  &kp F10   &kp UP    &kp F11       &kp F12    &kp HOME  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none         &kp PRINTSCREEN
-&none  &kp F3  &kp LEFT  &kp DOWN  &kp RIGHT     &kp F6     &kp END   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
-&none  &none   &none     &copy     &paste        &kp F8     &kp N0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_COMMA  &kp RSHIFT
-                         &none     &kp LEFT_WIN  &trans     &trans    &kp LCTRL     &none
+&none  &kp F2  &kp F10   &kp UP    &kp F11     &kp F12    &kp HOME  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none         &kp PRINTSCREEN
+&none  &kp F3  &kp LEFT  &kp DOWN  &kp RIGHT   &kp F6     &kp END   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
+&none  &none   &none     &copy     &paste      &kp F8     &kp N0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_COMMA  &kp RSHIFT
+                         &none     &shift_win  &trans     &trans    &kp LCTRL     &none
             >;
         };
 
