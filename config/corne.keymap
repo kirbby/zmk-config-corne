@@ -29,6 +29,21 @@
             bindings = <&kp ESC>;
             key-positions = <19 20>;
         };
+
+        UE {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 7>;
+        };
+
+        AE {
+            bindings = <&kp SQT>;
+            key-positions = <13 3>;
+        };
+
+        OE {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <3 22>;
+        };
     };
 
     macros {
