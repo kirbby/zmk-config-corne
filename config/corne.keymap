@@ -70,7 +70,7 @@
         shift_win: shift_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT &kp LEFT_WIN>, <&macro_press>;
+            bindings = <&macro_press>, <&kp LSHIFT &kp LEFT_WIN>;
 
             label = "SHIFT_WIN";
         };
