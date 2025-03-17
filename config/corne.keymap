@@ -36,7 +36,7 @@
 
         OE {
             bindings = <&kp SEMICOLON>;
-            key-positions = <3 22>;
+            key-positions = <3 9>;
         };
 
         SS {
