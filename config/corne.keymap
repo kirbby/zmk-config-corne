@@ -78,49 +78,49 @@
         ctrl_q: ctrl_q {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp Q>;
+            bindings = <&sk LCTRL &kp Q>;
             label = "CTRL_Q";
         };
 
         ctrl_a: ctrl_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp A>;
+            bindings = <&sk LCTRL &kp A>;
             label = "CTRL_A";
         };
 
         ctrl_s: ctrl_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp S>;
+            bindings = <&sk LCTRL &kp S>;
             label = "CTRL_S";
         };
 
         kill_node: kill_node {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT &kp LCTRL &kp LEFT_ALT &kp C>;
+            bindings = <&kp LSHIFT &sk LCTRL &sk LEFT_ALT &kp C>;
             label = "KILL_NODE";
         };
 
         alt_F1: find_file_in_explorer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp F1>;
+            bindings = <&sk LALT &kp F1>;
             label = "FIND_FILE_IN_EXPLORER";
         };
 
         ctrl_r: ctrl_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp R>;
+            bindings = <&sk LCTRL &kp R>;
             label = "CTRL_R";
         };
 
         ctrl_shift_r: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LSHIFT &kp R>;
+            bindings = <&sk LCTRL &sk LSHIFT &kp R>;
             label = "NEW_MACRO";
         };
 
