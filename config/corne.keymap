@@ -137,6 +137,13 @@
             bindings = <&sk LCTRL &kp TAB>;
             label = "CTRL_TAB";
         };
+
+        alt_F4: alt_F4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_ALT &kp F4>;
+            label = "ALT_F4";
+        };
     };
 
     behaviors {
@@ -181,7 +188,7 @@
         Numbers {
             bindings = <
 &kp F2     &kp F3    &kp F10   &kp UP    &kp F11     &kp F12    &kp HOME  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none         &kp PRINTSCREEN
-&ctrl_tab  &alt_tab  &kp LEFT  &kp DOWN  &kp RIGHT   &kp F6     &kp END   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
+&ctrl_tab  &alt_tab  &kp LEFT  &kp DOWN  &kp RIGHT   &kp F6     &kp END   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &alt_F4       &none
 &none      &none     &alt_F1   &copy     &paste      &kp F8     &kp N0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_COMMA  &kp RSHIFT
                                &trans    &shift_win  &trans     &trans    &kp LCTRL     &trans
             >;
