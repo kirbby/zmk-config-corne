@@ -75,27 +75,6 @@
             label = "SHIFT_WIN";
         };
 
-        ctrl_q: ctrl_q {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LCTRL &kp Q>;
-            label = "CTRL_Q";
-        };
-
-        ctrl_a: ctrl_a {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LCTRL &kp A>;
-            label = "CTRL_A";
-        };
-
-        ctrl_s: ctrl_s {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LCTRL &kp S>;
-            label = "CTRL_S";
-        };
-
         kill_node: kill_node {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -110,13 +89,6 @@
             label = "FIND_FILE_IN_EXPLORER";
         };
 
-        ctrl_r: ctrl_r {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LCTRL &kp R>;
-            label = "CTRL_R";
-        };
-
         ctrl_shift_r: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -127,14 +99,16 @@
         alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT &kp TAB>;
+            bindings = <&sk LEFT_ALT>, <&macro_press>, <&kp TAB>;
+
             label = "ALT_TAB";
         };
 
         ctrl_tab: ctrl_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LCTRL &kp TAB>;
+            bindings = <&sk LCTRL>, <&macro_press>, <&kp TAB>;
+
             label = "CTRL_TAB";
         };
 
@@ -188,7 +162,7 @@
         Numbers {
             bindings = <
 &kp F2     &kp F3    &kp F10   &kp UP    &kp F11     &kp F12    &kp HOME  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none         &kp PRINTSCREEN
-&ctrl_tab  &alt_tab  &kp LEFT  &kp DOWN  &kp RIGHT   &kp F6     &kp END   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &alt_F4       &none
+&ctrl_tab  &alt_tab  &kp LEFT  &kp DOWN  &kp RIGHT   &kp F6     &kp END   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &alt_F4
 &none      &none     &alt_F1   &copy     &paste      &kp F8     &kp N0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_COMMA  &kp RSHIFT
                                &trans    &shift_win  &trans     &trans    &kp LCTRL     &trans
             >;
