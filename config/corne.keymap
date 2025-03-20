@@ -65,7 +65,7 @@
         kill_node: kill_node {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT &sk LCTRL &sk LEFT_ALT &kp C>;
+            bindings = <&sk LSHIFT &sk LCTRL &sk LEFT_ALT &kp C>;
             label = "KILL_NODE";
         };
 
