@@ -116,10 +116,10 @@
 
         Symbols {
             bindings = <
-&kp DE_CARET  &euro      &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_EXCLAMATION  &kp DE_PERCENT    &kp DE_GRAVE         &kp DE_AMPERSAND      &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &none         &none
-&none         &kp DE_AT  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL        &kp DE_PIPE       &kp DE_SINGLE_QUOTE  &kp DE_PLUS           &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE    &kp DE_MINUS  &none
-&none         &none      &kp DE_BACKSLASH         &kp DE_SLASH              &kp DE_ASTERISK     &kp DE_DOLLAR     &kp DE_TILDE         &kp DE_DOUBLE_QUOTES  &none                &none                 &none         &none
-                                                  &trans                    &trans              &trans            &trans               &trans                &trans
+&kp DE_CARET  &euro      &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_EXCLAMATION  &kp DE_PERCENT    &kp DE_GRAVE     &kp DE_AMPERSAND      &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &none         &none
+&none         &kp DE_AT  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL        &kp DE_PIPE       &kp DE_QUESTION  &kp DE_PLUS           &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE    &kp DE_MINUS  &none
+&none         &none      &kp DE_BACKSLASH         &kp DE_SLASH              &kp DE_ASTERISK     &kp DE_DOLLAR     &kp DE_TILDE     &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &none                 &none         &none
+                                                  &trans                    &trans              &trans            &trans           &trans                &trans
             >;
         };
 
