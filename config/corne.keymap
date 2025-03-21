@@ -134,10 +134,10 @@
 
         Settings {
             bindings = <
-&none              &none  &bl BL_DEC       &bl BL_INC       &bl BL_TOG       &none    &none  &none       &none       &none  &none  &none
-&ext_power EP_OFF  &none  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none    &none  &bt BT_NXT  &bt BT_PRV  &to 0  &to 1  &none
-&ext_power EP_ON   &none  &none            &none            &none            &none    &none  &none       &none       &none  &none  &bt BT_CLR
-                                           &none            &none            &none    &none  &none       &none
+&none              &none  &bl BL_DEC       &bl BL_INC       &bl BL_TOG       &none    &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none  &none  &none
+&ext_power EP_OFF  &none  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none    &kp C_BRIGHTNESS_DEC  &bt BT_NXT         &bt BT_PRV       &to 0  &to 1  &none
+&ext_power EP_ON   &none  &none            &none            &none            &none    &none                 &none              &none            &none  &none  &bt BT_CLR
+                                           &none            &none            &none    &none                 &none              &none
             >;
         };
     };
