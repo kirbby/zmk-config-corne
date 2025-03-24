@@ -26,23 +26,28 @@
         };
 
         UE {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp DE_U_UMLAUT>;
             key-positions = <3 7>;
         };
 
         AE {
-            bindings = <&kp SQT>;
+            bindings = <&kp DE_A_UMLAUT>;
             key-positions = <13 3>;
         };
 
         OE {
-            bindings = <&kp SEMICOLON>;
+            bindings = <&kp DE_O_UMLAUT>;
             key-positions = <3 9>;
         };
 
         SS {
-            bindings = <&kp MINUS>;
+            bindings = <&kp DE_SZ>;
             key-positions = <14 21>;
+        };
+
+        Tab_DF {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
         };
     };
 
