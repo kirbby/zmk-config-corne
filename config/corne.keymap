@@ -49,6 +49,11 @@
             bindings = <&kp TAB>;
             key-positions = <15 16>;
         };
+
+        Left_Hand_GUI {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <14 15 16>;
+        };
     };
 
     macros {
