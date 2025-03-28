@@ -135,10 +135,10 @@
 
         Numbers {
             bindings = <
-&kp F2   &kp F10  &kp F11     &kp UP    &kp F3      &kp F12    &kp HOME  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none         &kp PRINTSCREEN
-&alt_F4  &kp F5   &kp LEFT    &kp DOWN  &kp RIGHT   &kp F6     &kp END   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
-&none    &none    &kill_node  &alt_F1   &kp DELETE  &kp F8     &kp N0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_COMMA  &kp RSHIFT
-                              &trans    &shift_win  &trans     &trans    &kp LCTRL     &kp NUMBER_0
+&kp F2      &kp F10  &kp F11   &kp UP    &kp F3      &kp F12    &kp HOME  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none         &kp PRINTSCREEN
+&alt_F4     &kp F5   &kp LEFT  &kp DOWN  &kp RIGHT   &kp F6     &kp END   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
+&kill_node  &none    &none     &alt_F1   &kp DELETE  &kp F8     &kp N0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_COMMA  &kp RSHIFT
+                               &trans    &shift_win  &trans     &trans    &kp LCTRL     &kp NUMBER_0
             >;
         };
 
