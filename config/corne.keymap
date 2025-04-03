@@ -66,6 +66,11 @@
             bindings = <&kp DELETE>;
             key-positions = <13 14>;
         };
+
+        CTRL_KL {
+            bindings = <&kp RCTRL>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
