@@ -61,6 +61,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
         };
+
+        DEL_AS {
+            bindings = <&kp DELETE>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
