@@ -52,9 +52,14 @@
             key-positions = <15 16>;
         };
 
-        Left_Hand_GUI {
+        GUI_Left {
             bindings = <&kp LEFT_GUI>;
             key-positions = <14 15 16>;
+        };
+
+        ESC_Left {
+            bindings = <&kp ESCAPE>;
+            key-positions = <14 15>;
         };
     };
 
