@@ -52,12 +52,12 @@
             key-positions = <15 16>;
         };
 
-        GUI_Left {
+        GUI_SDF {
             bindings = <&kp LEFT_GUI>;
             key-positions = <14 15 16>;
         };
 
-        ESC_Left {
+        ESC_SD {
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
         };
