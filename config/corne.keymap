@@ -74,17 +74,10 @@
     };
 
     macros {
-        euro: euro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk RIGHT_ALT &kp E>;
-            label = "EURO";
-        };
-
         shift_win: shift_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LSHIFT &kp LEFT_WIN>;
+            bindings = <&macro_press>, <&kp LS(LEFT_WIN)>;
 
             label = "SHIFT_WIN";
         };
@@ -92,22 +85,29 @@
         kill_node: kill_node {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LSHIFT &sk LCTRL &sk LEFT_ALT &kp C>;
+            bindings = <&kp LA(LS(LC(C)))>;
             label = "KILL_NODE";
         };
 
         alt_F1: find_file_in_explorer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LALT &kp F1>;
+            bindings = <&kp LA(F1)>;
             label = "FIND_FILE_IN_EXPLORER";
         };
 
         alt_F4: alt_F4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT &kp F4>;
+            bindings = <&kp LA(F4)>;
             label = "ALT_F4";
+        };
+
+        browser_inspect: browser_inspect {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(C))>;
+            label = "BROWSER_INSPECT";
         };
     };
 
