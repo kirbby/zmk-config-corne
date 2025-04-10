@@ -62,14 +62,14 @@
             key-positions = <14 15>;
         };
 
-        DEL_AS {
+        DEL_AF {
             bindings = <&kp DELETE>;
-            key-positions = <13 14>;
+            key-positions = <13 16>;
         };
 
-        CTRL_KL {
+        CTRL_JL {
             bindings = <&kp RCTRL>;
-            key-positions = <20 21>;
+            key-positions = <21 19>;
         };
     };
 
