@@ -44,7 +44,7 @@
 
         SS {
             bindings = <&kp DE_SZ>;
-            key-positions = <14 21>;
+            key-positions = <14 19>;
         };
 
         Tab_DF {
