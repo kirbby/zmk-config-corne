@@ -76,6 +76,11 @@
             bindings = <&kp LEFT_GUI>;
             key-positions = <19 20 21>;
         };
+
+        new_ai_chat {
+            bindings = <&new_ai_chat>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -113,6 +118,17 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LC(C))>;
             label = "BROWSER_INSPECT";
+        };
+
+        new_ai_chat: new_ai_chat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(I)>,
+                <&macro_pause_for_release>,
+                <&kp LA(INSERT)>;
+
+            label = "NEW_AI_CHAT";
         };
     };
 
